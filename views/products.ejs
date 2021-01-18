@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD NODE APP</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <section id="heading">
+        <h1>PRODUCTS SOLD TODAY</h1>
+    </section>
+    <div id="back">
+
+        <a href="http://localhost:3000">
+        
+            <button>BACK</button>
+        </a>
+    </div>
+
+    <section id="enter_product">
+
+        <form>
+
+            <input type="text" name="item" placeholder="Enter a product here..." required>
+            <button id="submt" type="submit">ADD ITEM</button>
+
+        </form>
+
+    </section>
+    <ol>
+        <% for(let i=0; i<products.length; i++){ %>
+        <li id="display_product" >
+            <%= products[i].item %>
+            <button class="edit" value="<%= products[i].id %>" name="<%= products[i].item %>" >Edit</button>
+            <button class="del" value="<%= products[i].item %>" >Delete</button>
+        </li>
+        <% } %>
+
+    </ol>
+
+    <script src="/assets/jquery-3.5.1.min.js"></script>
+    <script src="/assets/main.js"></script>
+
+</body>
+
+</html>
