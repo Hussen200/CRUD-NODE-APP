@@ -1,12 +1,12 @@
 # NODEJS-CRUD-APP
 
-How to Locally deploy the project;
+1.How to Locally deploy the project;
 
-Download the project to your machine
-download Mongodb to your computer and install it
-Open the downloaded project folder in VSCode or any IDM of your choice
-Open the console
-Run npm install, to install all the dependencies
-Run npm start app.js
-Open any browser of your choice and enter "localhost://3000" in the address bar
-test.
+2.Download the project to your machine
+3.download Mongodb to your computer and install it
+4.Open the downloaded project folder in VSCode or any IDM of your choice
+5.Open the console
+6.Run npm install, to install all the dependencies
+7.Run npm start app.js
+8.Open any browser of your choice and enter "localhost://3000" in the address bar
+9.test.
